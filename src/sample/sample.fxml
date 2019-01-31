@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="143.0" prefWidth="268.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+    <Label text="Počet kliknutí" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+    <Label text="Doba mezi kliknutím" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+    <Label text="Doba stisknutí" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+
+    <TextField fx:id="numOfClicks" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <TextField fx:id="timeBetweenClicks" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <TextField fx:id="clickDuration" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+
+    <Button onAction="#onButtonStart" text="Start" GridPane.rowIndex="3" />
+
+    <Button onAction="#onButtonStop" text="Stop" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+
+</GridPane>
